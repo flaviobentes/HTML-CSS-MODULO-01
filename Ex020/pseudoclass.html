@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;/* Todas as caixas em linha*/
+            background-color: lightgray;
+            text-align:center;
+            height: 400px; /*Altura*/
+            width: 400px;/*Largura*/
+            border: 2px solid black;
+            border-radius: 20px; /*ShortRen -> Codigo em do uma linha*/
+        }
+        /* A PseuDoClass "hover" quando usanda faz que tenha uma animacao na div que fou usada como passar o ponteiro do mause e caixa mudar de cor ou qualque configuração que for emplatada*/
+        div:hover {
+            background-color: blueviolet;
+            height: 450px;
+            width: 450px;
+        }*/
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display:block;
+        }
+        h1{
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        /*Para chama uma pseudoClass basta chamar ":"*/
+
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+   
+</body>
+</html>

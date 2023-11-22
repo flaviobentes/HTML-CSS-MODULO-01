@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  SIMBULOS / SELETORES PERSSONALIZADOS
+
+        #  = ID
+        .  = CLASS
+        :  = PSEUDO-CLASS
+        :: = PSEUDO-ELEMENT
+        >  = CLILDREN
+
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: arial, sans-serif;
+            font: 20px;
+            font-weight: bolder;
+        }
+        a{
+            color:#FF0000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        /*PSEUDO-CLASS*/
+        a:visited{/*O elemento so mudara de cor ou fara qualquer tipode acoes atribuida apenas quando eu ja tiver visitado o link*/
+            color: blue;
+        }
+        /*PSEUDO-CLASS*/
+        a:hover{ /*Apenas quando passar o mouse em cima o elemento mudara de cor oque fara qualquer tipo de acoes atribuida a ele*/
+            font-size: 30px;
+            color: aqua;
+            text-decoration: underline;
+        }
+        /*PSEUDO-CLASS*/
+        a:active{/*Apenas quando eu clicar elemento mudara de cor*/
+            color: yellow;
+        }
+        /*PSEUDO-ELEMENT*/
+        a::after{/* depois do final do conteudo oque estiver dentro de content sera exibido*/
+           content: ' [Link]';
+           text-decoration: none;
+           font-weight: normal;
+
+        }
+        /*PSEUDO-ELEMENT*/
+        a::before{/* antes do começo do conteudo oque estiver dentro de content sera exibido*/
+           content: '☛';
+           text-decoration: none;
+           font-weight: normal;
+
+        }
+        .especial::after{
+            content: ' ♚';
+           text-decoration: none;
+           font-weight: normal;
+        }
+        .especial::before{
+            content: '♛ ';
+           text-decoration: none;
+           font-weight: normal;
+        }
+    </style>
+<body>
+    <ul>
+        <h1>Link abaixo</h1>
+
+        <li><a href="https://amazon.com.br">Repositorio GitHub</a></li>
+
+        <li><a href="https://www.google.com" class="especial" target="_blank" rel="external">Canal do You</a></li>
+
+        <li><a href="https://globo.com">Site do Curso em video</a>></li>
+    </ul>
+</body>
+</html>

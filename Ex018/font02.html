@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Esternas</title>
+    <style>
+        
+        @font-face {/*Adicionar fontes externas*/
+            font-family: 'amor';
+            src: url('fonts/love story ttf.ttf') format('opentype'), url('fonts/Mf Love Song.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+            Tipos de format:
+            -opentype(otf)
+            -truetype(ttf)
+            -enbedded-opentype()
+            -truetype-aat (Apple advanced typography)
+            -svg
+            */
+        }
+        body{
+            font-family: arial, helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'amor', times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo de exemplo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, maxime non! Non excepturi facilis ullam deserunt consequuntur vitae qui in iusto voluptatem cumque, dolores fugiat dolor quos, soluta tempore distinctio!</p>
+</body>
+</html>

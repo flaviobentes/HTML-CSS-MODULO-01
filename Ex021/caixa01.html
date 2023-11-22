@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Modelos de caixas</title>
+    <style>
+        h1{/*Box level*/
+            
+             font-family: Arial, Helvetica, sans-serif;
+              font-size: 20px;
+              background-color: lightgrey;
+             height:300px;
+             width: 300px;
+             border-width:50px ;/*Largura da borda*/
+             border-style: solid;
+             border-color: darkcyan;
+             border-radius: 5%;
+             display: block;
+
+             /*Forma simplificada de borda na mesma linha  SHORHEDEN*/
+             border: 10px solid darkblue;
+             
+             /*---------------------------------------------------------------*/
+
+             /*Preenchimento*/
+             padding-top: 10px;
+             padding-right: 10px;
+             padding-bottom:10px;
+             padding-left:10px;
+             
+             text-align: center;
+
+             /*Pading de forma simplificada*/
+
+             /*pasding:10px 20px 30px 10px;*/
+
+             /*padding:10px ;dessa forma essa medida sera valida para toda a caixa e todaa aarera sera do mesmo tamanho*/
+
+             /*padding: 10px 20px;Dessa forma a primeira sequencia de 10px servira para parte de cima e da de baixo, na sefunda sequencia os valores serao paa direita e para esquerda*/
+
+             /*----------------------------------------------------------------------------------*/
+
+             /*Forma simplificada de preenchimento na mesma linha  SHORHEDEN, a sequencia de ve se seguir o movometo do relogio  cima. direira. baixo. esquerda*/
+             margin: 50px 10px 100px 10px;
+
+             /*Borda*/
+             margin-top: 10px;
+             margin-left: 10px;
+             margin-right: 10px;
+             margin-bottom: 50px;
+
+             /*------------------------------------------------------------------------------------------*/
+
+             /*Entre a borda e a margen*/
+             outline-width: 5px;
+             outline-style: dashed;
+             outline-color: blueviolet;
+
+             /*shotHend   outline: 5px dashed(tipo) #FF0000(cor)*/
+
+        }
+        a{/*inline level*/
+            border-width: 2px;
+            border-style: solid;
+            border-color:#000000;
+
+            padding-top: 10px;
+             padding-right: 20px;/*Para cima*/
+             padding-bottom:10px;/*Para baixo*/
+             padding-left:20px;
+             border-radius: 5px;
+             text-align: justify;
+             
+        }
+    </style>
+</head>
+<body>
+    <h1>Exmeplos de caixa Box-level</h1>
+    <p>Paragrafos tambem sao exemplos de Box-Level, maos os <a href="#">Links sao exemplos de caixas Inline-Level</a><a href="Sapo de cachorro">caca de cahorro</a>Vamos ver como tudo isso funciona</p>
+</body>
+</html>

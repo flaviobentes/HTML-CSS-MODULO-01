@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia dinamica</title>
+</head>
+<body>
+    <h1>Imagens dinamivas</h1>
+    <h2>Esta imagens de mouda comforme o tamannho da pagina</h2>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/img-p.png"
+         type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/img-m.png"
+         type="image/png">
+        <img src="imagens/img-g.png" alt="imagen flexivel">
+    </picture>
+    <br>
+    <h1>Reproduxir musicas</h1>
+    <p>Vou adiciona audio ao site</p>
+    <audio preload="metadata" autoplay controls loop> <!-- Essde comando servira para poder ter o icono de audio  tela///  MEtada=Sonebte imformaçoes do auduio so iria fazser o daw louda assim que der o olay-->
+        <source src="midias/nome do audio" type="audio/mpeg">
+        <source src="midias/nome do audio" type="audio/ogg">
+        <source src="midias/nome do audio" type="audio/wav">
+        <p>Infelizmente  seu navegador nao consegue  reproduzir esse audio
+         <a href="midias/nome da pasta"> CLik aqui para baixar  mp3</a>
+        </p>
+    </audio>
+    
+</body>
+</html>
